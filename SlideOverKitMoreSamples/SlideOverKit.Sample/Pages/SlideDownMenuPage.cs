@@ -4,12 +4,12 @@ using Xamarin.Forms;
 
 namespace SlideOverKit.MoreSample
 {
-    public class SlideDownMenuPage : ContentPage,  IMenuContainerPage
+    public class SlideDownMenuPage : ContentPage, IMenuContainerPage
     {
         // If your page cannot inheirt from the MenuContainerPage.
         // You can implement the IMenuContainerPage interface.
         // Overwrite these properties
-        public Action HideMenuAction {            
+        public Action HideMenuAction {
             get;
             set;
         }
@@ -23,6 +23,9 @@ namespace SlideOverKit.MoreSample
             get;
             set;
         }
+        public Action OnShowMenuAction { get; set; }
+
+        public Action OnHideMenuAction { get; set; }
 
         public SlideDownMenuPage ()
         {

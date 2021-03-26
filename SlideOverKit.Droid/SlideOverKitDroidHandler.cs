@@ -75,6 +75,8 @@ namespace SlideOverKit.Droid
                     .SetDuration (menu.AnimationDurationMillisecond)
                     .SetListener (new AnimatorListener (_dragGesture, false))
                     .Start ();
+
+                _basePage.OnHideMenuAction ();
             };
 
             _basePage.ShowMenuAction = () => {
@@ -87,6 +89,8 @@ namespace SlideOverKit.Droid
                     .SetDuration (menu.AnimationDurationMillisecond)
                     .SetListener (new AnimatorListener (_dragGesture, true))
                     .Start ();
+
+                _basePage.OnShowMenuAction ();
             };
 
             if (_popMenuOverlayRenderer == null) {
@@ -271,7 +275,9 @@ namespace SlideOverKit.Droid
 
         void HideMenu (object sender, Android.Views.View.TouchEventArgs e)
         {
-            _basePage.HideMenuAction ();
+            if (e.Event.Action == MotionEventActions.Down) {
+                _basePage.HideMenuAction ();
+            }
         }
 
         void HidePopup (object sender, Android.Views.View.TouchEventArgs e)

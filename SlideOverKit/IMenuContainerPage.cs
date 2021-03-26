@@ -9,6 +9,10 @@ namespace SlideOverKit
         Action ShowMenuAction { get; set; }
 
         Action HideMenuAction { get; set; }
+
+        Action OnShowMenuAction { get; set; }
+
+        Action OnHideMenuAction { get; set; }
     }
 }
 

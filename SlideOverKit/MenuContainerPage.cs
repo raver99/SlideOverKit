@@ -13,6 +13,7 @@ namespace SlideOverKit
         }
 
         SlideMenuView slideMenu;
+
         public SlideMenuView SlideMenu {
             get {
                 return slideMenu;
@@ -30,9 +31,13 @@ namespace SlideOverKit
 
         public Action HideMenuAction { get; set; }
 
+        public Action OnShowMenuAction { get; set; }
+
+        public Action OnHideMenuAction { get; set; }
+
         public Dictionary<string, SlidePopupView> PopupViews { get; set; }
 
-        public Action<string>  ShowPopupAction { get; set; }
+        public Action<string> ShowPopupAction { get; set; }
 
         public Action HidePopupAction { get; set; }
 

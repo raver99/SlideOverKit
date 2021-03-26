@@ -154,12 +154,15 @@ namespace SlideOverKit.iOS
                 UIView.SetAnimationDuration (((double)menu.AnimationDurationMillisecond) / 1000);
                 _dragGesture.LayoutHideStatus ();
 
+                _basePage.OnHideMenuAction?.Invoke ();
             };
 
             _basePage.ShowMenuAction = () => {
                 UIView.BeginAnimations ("OpenAnimation");
                 UIView.SetAnimationDuration (((double)menu.AnimationDurationMillisecond) / 1000);
                 _dragGesture.LayoutShowStatus ();
+
+                _basePage.OnShowMenuAction?.Invoke ();
             };
 
             if (_menuOverlayRenderer == null) {

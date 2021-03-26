@@ -1,5 +1,5 @@
 ﻿using System;
-
+using System.Diagnostics;
 using Xamarin.Forms;
 
 namespace SlideOverKit.MoreSample
@@ -8,7 +8,7 @@ namespace SlideOverKit.MoreSample
     {
         public SlideUpMenuPage ()
         {
-            Content = new StackLayout { 
+            Content = new StackLayout {
                 VerticalOptions = LayoutOptions.Center,
                 Spacing = 10,
                 Children = {
@@ -28,6 +28,14 @@ namespace SlideOverKit.MoreSample
             };
 
             this.SlideMenu = new SlideUpMenuView ();
+
+            OnHideMenuAction = () => {
+                Debug.WriteLine ("Hide Menu");
+            };
+
+            OnShowMenuAction = () => {
+                Debug.WriteLine ("Show Menu");
+            };
         }
     }
 }

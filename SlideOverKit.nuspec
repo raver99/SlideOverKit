@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package>
 	<metadata>
-		<id>SlideOverKit</id>
+		<id>SlideOverKitExt</id>
 		<version>2.1.6.2</version>
-		<title>SlideOverKit</title>
-		<authors>Michael Ridland @ XAM Consulting</authors>
-		<owners>Michael Ridland @ XAM Consulting</owners>
-		<projectUrl>http://www.xam-consulting.com/slideoverkit-xamarin-forms/</projectUrl>
+		<title>SlideOverKitExt</title>
+		<authors>Roland Huhn</authors>
+		<owners>Roland Huhn</owners>
+		<projectUrl>https://github.com/raver99/SlideOverKit</projectUrl>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
-		<description>Easily Create Awesome Slideover's in Xamarin.Forms</description>
+		<description>Based on SlideOverkit by Michael Ridland @ XAM Consulting. Easily Create Awesome Slideover's in Xamarin.Forms</description>
 		<tags>Xamarin, Xamarin.Forms, SlideOverKit</tags>
 		<releaseNotes>
 2.1.6.2

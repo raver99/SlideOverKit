@@ -1,11 +1,17 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <TargetFrameworks>netstandard2.0;netstandard1.0</TargetFrameworks>
-  </PropertyGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="2.5.0.280555" />
-
-  </ItemGroup>
-
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFrameworks>netstandard2.0</TargetFrameworks>
+		<ReleaseVersion>1.1.0</ReleaseVersion>
+		<PackageId>sdvsdv</PackageId>
+		<PackageVersion>1</PackageVersion>
+		<Copyright>zcxvzxcv</Copyright>
+		<Owners>zcvzxcv</Owners>
+		<Summary>zcvz</Summary>
+		<Title>zxcvxzcv</Title>
+		<Description>dvsdvcsdv</Description>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="Xamarin.Forms" Version="2.5.0.280555" />
+	</ItemGroup>
 </Project>

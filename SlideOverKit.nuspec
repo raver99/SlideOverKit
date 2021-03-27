@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<package >
-  <metadata>
-    <id>SlideOverKit</id>
-    <version>2.1.6.1</version>
-    <title>SlideOverKit</title>
-    <authors>Michael Ridland @ XAM Consulting</authors>
-    <owners>Michael Ridland @ XAM Consulting</owners>
-    <projectUrl>http://www.xam-consulting.com/slideoverkit-xamarin-forms/</projectUrl>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Easily Create Awesome Slideover's in Xamarin.Forms</description>
-    <tags>Xamarin, Xamarin.Forms, SlideOverKit</tags>
-    <releaseNotes>
+<package>
+	<metadata>
+		<id>SlideOverKit</id>
+		<version>2.1.6.2</version>
+		<title>SlideOverKit</title>
+		<authors>Michael Ridland @ XAM Consulting</authors>
+		<owners>Michael Ridland @ XAM Consulting</owners>
+		<projectUrl>http://www.xam-consulting.com/slideoverkit-xamarin-forms/</projectUrl>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<description>Easily Create Awesome Slideover's in Xamarin.Forms</description>
+		<tags>Xamarin, Xamarin.Forms, SlideOverKit</tags>
+		<releaseNotes>
+2.1.6.2
+[feature] Add Show/Hide Actions for custom code
+
 2.1.6.1
 [fix] ObjectDisposedException on Android.
 
@@ -60,12 +63,12 @@
 1.0.0
 [feature] Add SlideMenuView.
     </releaseNotes>
-  </metadata>
-  <files>
-    <file src="SlideOverKit\bin\Release\netstandard1.0\SlideOverKit*.*" target="lib\netstandard1.0" />
-    <file src="SlideOverKit\bin\Release\netstandard2.0\SlideOverKit*.*" target="lib\netstandard2.0" />
-    <file src="SlideOverKit.iOS\bin\Release\SlideOverKit*.*" target="lib\Xamarin.iOS10" />
-    <file src="SlideOverKit.Droid\bin\Release\SlideOverKit*.*" target="lib\MonoAndroid10" />
-    <file src="SlideOverKit.UWP\bin\Release\SlideOverKit*.*" target="lib\uap10.0" />
-  </files>
+	</metadata>
+	<files>
+		<!--		<file src="SlideOverKit\bin\Release\netstandard1.0\SlideOverKit*.*" target="lib\netstandard1.0" />-->
+		<file src="SlideOverKit\bin\Release\netstandard2.0\SlideOverKit*.*" target="lib\netstandard2.0" />
+		<file src="SlideOverKit.iOS\bin\Release\SlideOverKit*.*" target="lib\Xamarin.iOS10" />
+		<file src="SlideOverKit.Droid\bin\Release\SlideOverKit*.*" target="lib\MonoAndroid10" />
+		<!--    <file src="SlideOverKit.UWP\bin\Release\SlideOverKit*.*" target="lib\uap10.0" />-->
+	</files>
 </package>

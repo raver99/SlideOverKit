@@ -2,7 +2,7 @@
 <package>
 	<metadata>
 		<id>SlideOverKitExt</id>
-		<version>2.1.6.2</version>
+		<version>2.1.6.3</version>
 		<title>SlideOverKitExt</title>
 		<authors>Roland Huhn</authors>
 		<owners>Roland Huhn</owners>
@@ -11,6 +11,9 @@
 		<description>Based on SlideOverkit by Michael Ridland @ XAM Consulting. Easily Create Awesome Slideover's in Xamarin.Forms</description>
 		<tags>Xamarin, Xamarin.Forms, SlideOverKit</tags>
 		<releaseNotes>
+2.1.6.3
+[bugfix] Trigger Hide Action for dragging 
+
 2.1.6.2
 [feature] Add Show/Hide Actions for custom code
 

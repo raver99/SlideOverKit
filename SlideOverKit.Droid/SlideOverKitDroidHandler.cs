@@ -122,8 +122,12 @@ namespace SlideOverKit.Droid
                 _dragGesture.NeedShowBackgroundView = (open, alpha) => {
                     if (open)
                         ShowBackgroundOverlay (alpha);
-                    else
+                    else {
                         HideBackgroundOverlay ();
+
+                        _basePage.OnHideMenuAction ();
+                    }
+
                 };
             }
         }

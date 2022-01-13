@@ -180,6 +180,7 @@ namespace SlideOverKit.iOS
 
                     } else if (_panGesture.State == UIGestureRecognizerState.Ended) {
                         _dragGesture.DragFinished ();
+                        _basePage.OnHideMenuAction?.Invoke ();
                     }
                 });
                 _menuOverlayRenderer.NativeView.AddGestureRecognizer (_panGesture);
